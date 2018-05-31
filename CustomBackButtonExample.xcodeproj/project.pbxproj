@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8A3C61C620C025500096BBA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3C61C520C025500096BBA4 /* AppDelegate.swift */; };
-		8A3C61C820C025500096BBA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3C61C720C025500096BBA4 /* ViewController.swift */; };
+		8A3C61C820C025500096BBA4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3C61C720C025500096BBA4 /* MainViewController.swift */; };
 		8A3C61CB20C025500096BBA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3C61C920C025500096BBA4 /* Main.storyboard */; };
 		8A3C61CD20C025500096BBA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3C61CC20C025500096BBA4 /* Assets.xcassets */; };
 		8A3C61D020C025500096BBA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3C61CE20C025500096BBA4 /* LaunchScreen.storyboard */; };
 		8A3C61DB20C025500096BBA4 /* CustomBackButtonExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3C61DA20C025500096BBA4 /* CustomBackButtonExampleTests.swift */; };
 		8A3C61E620C025510096BBA4 /* CustomBackButtonExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3C61E520C025510096BBA4 /* CustomBackButtonExampleUITests.swift */; };
+		8A3C61FA20C027E40096BBA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3C61F920C027E30096BBA4 /* DetailViewController.swift */; };
+		8A3C61FC20C027E80096BBA4 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3C61FB20C027E80096BBA4 /* UIViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		8A3C61C220C025500096BBA4 /* CustomBackButtonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomBackButtonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3C61C520C025500096BBA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A3C61C720C025500096BBA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A3C61C720C025500096BBA4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8A3C61CA20C025500096BBA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A3C61CC20C025500096BBA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A3C61CF20C025500096BBA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		8A3C61E120C025510096BBA4 /* CustomBackButtonExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomBackButtonExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3C61E520C025510096BBA4 /* CustomBackButtonExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonExampleUITests.swift; sourceTree = "<group>"; };
 		8A3C61E720C025510096BBA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A3C61F920C027E30096BBA4 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8A3C61FB20C027E80096BBA4 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				8A3C61C520C025500096BBA4 /* AppDelegate.swift */,
-				8A3C61C720C025500096BBA4 /* ViewController.swift */,
+				8A3C61FB20C027E80096BBA4 /* UIViewControllerExtensions.swift */,
+				8A3C61C720C025500096BBA4 /* MainViewController.swift */,
+				8A3C61F920C027E30096BBA4 /* DetailViewController.swift */,
 				8A3C61C920C025500096BBA4 /* Main.storyboard */,
 				8A3C61CC20C025500096BBA4 /* Assets.xcassets */,
 				8A3C61CE20C025500096BBA4 /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A3C61C820C025500096BBA4 /* ViewController.swift in Sources */,
+				8A3C61FC20C027E80096BBA4 /* UIViewControllerExtensions.swift in Sources */,
+				8A3C61FA20C027E40096BBA4 /* DetailViewController.swift in Sources */,
+				8A3C61C820C025500096BBA4 /* MainViewController.swift in Sources */,
 				8A3C61C620C025500096BBA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
